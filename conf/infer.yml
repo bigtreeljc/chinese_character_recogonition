@@ -1,0 +1,9 @@
+model_dir: models
+model_file: crnn_iter299.pth
+debug_level: 10
+img_to_infer: data/ocr_dataset_train_20_10_val/的个他人是.jpg
+img_h: 32
+img_w: 150
+show: True
+n_class: 10
+test_root: data/ocr_dataset_train_20_10_val

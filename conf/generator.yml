@@ -1,0 +1,11 @@
+n_bg: 1
+n_font: 1
+ch_h: 32
+n_pic: 20
+sample_size: 10
+min_len: 4
+max_len: 6
+bg_dir: data/bgs
+font_dir: data/chn_fonts
+target_dir: data/ocr_dataset_train_20_10_val
+chn_map_path: data/chn_corpus/word_freq.json
