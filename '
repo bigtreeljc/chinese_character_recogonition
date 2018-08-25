@@ -1,0 +1,33 @@
+import yaml
+from easydict import EasyDict as edict
+import generate_ocr as go
+import os
+import torch.optim as optim
+from torch.autograd import Variable
+from warpctc_pytorch import CTCLoss
+import numpy as np
+import cv2
+import random
+import torch.nn as nn
+import torch
+import torch.nn.functional as F
+import os
+import unittest
+import logging
+from crnn import CRNN, weights_init
+
+def main():
+    conf_file = "conf/train.yml"
+    with open(conf_file, 'r') as f:
+        args = edict(yaml.load(f))
+    model = os.path.join(args.model_dir, args.model_file)
+
+    logging.getLogger().setLevel(debug_level)
+    '''
+        50 - critical
+        40 - error
+        30 - warining
+        20 - info
+        10 - debug
+    '''
+
